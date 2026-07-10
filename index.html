@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="utf-8"/>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+    <title>Tamscot Events | The Art of Celebration</title>
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Montserrat:wght@300;400;500;600&display=swap" rel="stylesheet"/>
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@200,0&display=swap" rel="stylesheet"/>
+    <script src="tailwind-config.js"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="antialiased selection:bg-primary selection:text-white bg-background">
+
+<!-- Elegant Navigation -->
+<nav class="fixed top-0 w-full z-50 glass-nav transition-all duration-500" id="navbar">
+    <div class="flex justify-between items-center px-8 md:px-16 py-5 max-w-[1600px] mx-auto">
+        <div class="display-font text-2xl md:text-3xl text-primary font-medium tracking-wide">Tamscot Event</div>
+        
+        <div class="desktop-nav hidden md:flex gap-10 items-center">
+            <a class="text-xs uppercase tracking-[0.2em] text-primary font-semibold relative group" href="index.html">
+                Home
+                <span class="absolute -bottom-2 left-0 w-full h-[1px] bg-primary scale-x-100 transition-transform duration-300"></span>
+            </a>
+            <a class="text-xs uppercase tracking-[0.2em] text-noir/60 hover:text-primary transition-colors relative group" href="about.html">
+                About
+                <span class="absolute -bottom-2 left-0 w-0 h-[1px] bg-primary group-hover:w-full transition-all duration-300"></span>
+            </a>
+            <a class="text-xs uppercase tracking-[0.2em] text-noir/60 hover:text-primary transition-colors relative group" href="services.html">
+                Services
+                <span class="absolute -bottom-2 left-0 w-0 h-[1px] bg-primary group-hover:w-full transition-all duration-300"></span>
+            </a>
+            <a class="text-xs uppercase tracking-[0.2em] text-noir/60 hover:text-primary transition-colors relative group" href="gallery.html">
+                Gallery
+                <span class="absolute -bottom-2 left-0 w-0 h-[1px] bg-primary group-hover:w-full transition-all duration-300"></span>
+            </a>
+            <a class="text-xs uppercase tracking-[0.2em] text-noir/60 hover:text-primary transition-colors relative group" href="contact.html">
+                Contact
+            </a>
+            <a href="https://wa.me/2349034486406?text=Hello%20Tamscot%20Events%2C%20I%20would%20like%20to%20book%20a%20consultation." target="_blank" rel="noopener noreferrer" class="ml-6 px-8 py-3 bg-primary text-white text-xs uppercase tracking-[0.2em] rounded-full hover:bg-noir transition-colors duration-500 shadow-lg shadow-primary/20">Book Consultation</a>
+        </div>
+        <button class="md:hidden text-primary">
+            <span class="material-symbols-outlined text-3xl">menu_open</span>
+        </button>
+    </div>
+</nav>
+
+<!-- Cinematic Hero -->
+<section class="relative min-h-[85vh] flex items-center justify-center overflow-hidden">
+    <div class="absolute inset-0 z-0">
+        <!-- Sleek gradient that stays dark until the very bottom edge for a perfect blend -->
+        <div class="absolute inset-0 bg-gradient-to-b from-noir/40 via-noir/20 via-90% to-background/95 z-10"></div>
+        <div class="w-full h-full bg-cover bg-center scale-105 animate-[float_20s_ease-in-out_infinite]" style="background-image: url('assets/images/hero.png')"></div>
+    </div>
+    <div class="absolute inset-x-0 bottom-0 h-28 bg-gradient-to-t from-[#f5ece5] to-transparent pointer-events-none"></div>
+    
+    <div class="relative z-20 text-center px-6 mt-16 max-w-5xl mx-auto w-full">
+        <span class="block text-white/90 text-sm md:text-base uppercase tracking-[0.4em] mb-6 animate-fade-up" style="animation-delay: 0.1s;">Luxury Event Planning</span>
+        <h1 class="display-font text-5xl md:text-7xl lg:text-8xl text-white leading-[1.1] mb-10 animate-fade-up drop-shadow-xl" style="animation-delay: 0.3s;">
+            Redesigning the art of <br/> <span class="italic text-white">Celebration</span>
+        </h1>
+        <div class="animate-fade-up" style="animation-delay: 0.5s;">
+            <a href="gallery.html" class="inline-block px-10 py-4 bg-white/10 backdrop-blur-md border border-white/30 text-white text-xs md:text-sm uppercase tracking-[0.2em] rounded-full hover:bg-white hover:text-primary transition-all duration-500 shadow-2xl group relative overflow-hidden">
+                <span class="relative z-10">Explore Our Portfolio</span>
+            </a>
+        </div>
+    </div>
+</section>
+
+<!-- The Philosophy (Modern & Airy) -->
+<section class="py-32 bg-white relative overflow-hidden">
+    <div class="absolute inset-x-0 top-0 h-24 bg-gradient-to-b from-[#f5ece5] to-transparent pointer-events-none"></div>
+    <div class="px-8 md:px-16 max-w-7xl mx-auto relative z-10">
+        <!-- Sleek decorative accent -->
+        <div class="w-[1px] h-24 bg-primary/30 mx-auto mb-16 reveal"></div>
+        
+        <div class="text-center max-w-4xl mx-auto mb-24 reveal">
+            <h2 class="display-font text-4xl md:text-6xl text-noir mb-8 leading-tight">
+                Where meticulous precision <br/>meets <span class="italic text-primary">visual poetry.</span>
+            </h2>
+            <p class="text-lg md:text-xl text-noir/60 font-light leading-relaxed">
+                We curate bespoke experiences for those who demand the extraordinary. Every event is a silent dialogue between architecture, emotion, and ephemeral beauty. We do not just plan; we orchestrate unforgettable moments.
+            </p>
+        </div>
+
+        <!-- Sleek Stats -->
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-12 mt-20 reveal">
+            <div class="flex flex-col items-center justify-center p-8 glass-card rounded-3xl">
+                <div class="display-font text-5xl md:text-6xl text-primary mb-3">200<span class="text-secondary">+</span></div>
+                <p class="text-xs uppercase tracking-[0.2em] text-noir/50">Events Curated</p>
+            </div>
+            <div class="flex flex-col items-center justify-center p-8 glass-card rounded-3xl">
+                <div class="display-font text-5xl md:text-6xl text-primary mb-3">8<span class="text-secondary">+</span></div>
+                <p class="text-xs uppercase tracking-[0.2em] text-noir/50">Years of Excellence</p>
+            </div>
+            <div class="flex flex-col items-center justify-center p-8 glass-card rounded-3xl">
+                <div class="display-font text-5xl md:text-6xl text-primary mb-3">100<span class="text-secondary">%</span></div>
+                <p class="text-xs uppercase tracking-[0.2em] text-noir/50">Client Satisfaction</p>
+            </div>
+        </div>
+        
+        <!-- Elegant Trust Badges -->
+        <div class="flex justify-center items-center gap-4 md:gap-8 mt-16 reveal">
+            <span class="text-xs md:text-sm uppercase tracking-[0.2em] text-noir/40">Reliable</span>
+            <span class="w-1 h-1 bg-secondary rounded-full"></span>
+            <span class="text-xs md:text-sm uppercase tracking-[0.2em] text-noir/40">Affordable</span>
+            <span class="w-1 h-1 bg-secondary rounded-full"></span>
+            <span class="text-xs md:text-sm uppercase tracking-[0.2em] text-noir/40">Trusted</span>
+        </div>
+    </div>
+</section>
+
+<!-- Sleek Services -->
+<section class="py-32 bg-background relative">
+    <div class="px-8 md:px-16 max-w-7xl mx-auto">
+        <div class="text-center mb-20 reveal">
+            <span class="text-xs uppercase tracking-[0.3em] text-primary mb-4 block">Our Expertise</span>
+            <h2 class="display-font text-4xl md:text-5xl text-noir">Bespoke Services</h2>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+            <!-- Service 1 -->
+            <div class="group relative overflow-hidden rounded-[2rem] reveal h-96">
+                <div class="absolute inset-0 bg-cover bg-center transition-transform duration-1000 group-hover:scale-110" style="background-image: url('https://images.unsplash.com/photo-1519225421980-715cb0215aed?q=80&w=1000&auto=format&fit=crop')"></div>
+                <div class="absolute inset-0 bg-gradient-to-t from-noir/90 via-noir/20 to-transparent"></div>
+                <div class="absolute bottom-0 left-0 w-full p-10 transform translate-y-4 group-hover:translate-y-0 transition-transform duration-500">
+                    <span class="text-secondary text-sm font-light mb-2 block">01</span>
+                    <h3 class="display-font text-3xl text-white mb-3">Interior &amp; Exterior Decoration</h3>
+                    <p class="text-white/70 font-light opacity-0 group-hover:opacity-100 transition-opacity duration-500 delay-100">Transforming venues inside and out. From elegant halls to stunning outdoor marquees.</p>
+                </div>
+            </div>
+            
+            <!-- Service 2 -->
+            <div class="group relative overflow-hidden rounded-[2rem] reveal h-96 md:mt-12">
+                <div class="absolute inset-0 bg-cover bg-center transition-transform duration-1000 group-hover:scale-110" style="background-image: url('assets/images/proosal.jpg')"></div>
+                <div class="absolute inset-0 bg-gradient-to-t from-noir/90 via-noir/20 to-transparent"></div>
+                <div class="absolute bottom-0 left-0 w-full p-10 transform translate-y-4 group-hover:translate-y-0 transition-transform duration-500">
+                    <span class="text-secondary text-sm font-light mb-2 block">02</span>
+                    <h3 class="display-font text-3xl text-white mb-3">Proposal Decor</h3>
+                    <p class="text-white/70 font-light opacity-0 group-hover:opacity-100 transition-opacity duration-500 delay-100">Make the question unforgettable with our romantic, perfectly styled surprise setups.</p>
+                </div>
+            </div>
+
+            <!-- Service 3 -->
+            <div class="group relative overflow-hidden rounded-[2rem] reveal h-96">
+                <div class="absolute inset-0 bg-cover bg-center transition-transform duration-1000 group-hover:scale-110" style="background-image: url('assets/images/asoebi.jpg')"></div>
+                <div class="absolute inset-0 bg-gradient-to-t from-noir/90 via-noir/20 to-transparent"></div>
+                <div class="absolute bottom-0 left-0 w-full p-10 transform translate-y-4 group-hover:translate-y-0 transition-transform duration-500">
+                    <span class="text-secondary text-sm font-light mb-2 block">03</span>
+                    <h3 class="display-font text-3xl text-white mb-3">Bridal &amp; Aso Ebi Fans</h3>
+                    <p class="text-white/70 font-light opacity-0 group-hover:opacity-100 transition-opacity duration-500 delay-100">Exquisite, handcrafted luxury fans tailored perfectly to your colors.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Pricing Section -->
+<section class="py-32 bg-white relative overflow-hidden">
+    <div class="px-8 md:px-16 max-w-7xl mx-auto">
+        <div class="text-center mb-20 reveal">
+            <span class="text-xs uppercase tracking-[0.3em] text-primary mb-4 block">We Create, You Celebrate</span>
+            <h2 class="display-font text-4xl md:text-6xl text-noir mb-6">Decoration Packages & Price Guide</h2>
+            <p class="text-noir/50 font-light text-lg max-w-2xl mx-auto">From concept to celebration — we make it unforgettable.</p>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+
+            <!-- SILVER -->
+            <div data-pricing-card class="relative rounded-3xl p-8 flex flex-col reveal cursor-pointer transition-all duration-500 bg-white/85 border border-white/50 glass-card shadow-xl ring-1 ring-primary/10 hover:-translate-y-2 hover:shadow-2xl">
+                <div data-badge class="absolute -top-3 left-1/2 -translate-x-1/2 bg-secondary text-noir text-[10px] uppercase tracking-[0.2em] font-semibold px-4 py-1 rounded-full hidden">Selected</div>
+                <div class="mb-8">
+                    <span data-tier-label class="text-xs uppercase tracking-[0.3em] text-noir/40 block mb-2">Tier 1</span>
+                    <h3 data-tier-title class="display-font text-3xl text-noir mb-3">Silver</h3>
+                    <div data-tier-price class="text-primary font-semibold text-sm">₦500,000 – ₦1,000,000</div>
+                </div>
+                <div data-tier-divider class="w-full h-[1px] bg-primary/10 mb-8"></div>
+                <ul class="space-y-4 flex-grow">
+                    <li data-tier-item class="flex items-start gap-3 text-noir/70 text-sm font-light"><span data-bullet class="w-1 h-1 bg-primary rounded-full mt-2 shrink-0"></span> Standard Stage Setup</li>
+                    <li data-tier-item class="flex items-start gap-3 text-noir/70 text-sm font-light"><span data-bullet class="w-1 h-1 bg-primary rounded-full mt-2 shrink-0"></span> Flower Arrangements</li>
+                    <li data-tier-item class="flex items-start gap-3 text-noir/70 text-sm font-light"><span data-bullet class="w-1 h-1 bg-primary rounded-full mt-2 shrink-0"></span> Draping &amp; Backdrop</li>
+                    <li data-tier-item class="flex items-start gap-3 text-noir/70 text-sm font-light"><span data-bullet class="w-1 h-1 bg-primary rounded-full mt-2 shrink-0"></span> Basic Lighting</li>
+                    <li data-tier-item class="flex items-start gap-3 text-noir/70 text-sm font-light"><span data-bullet class="w-1 h-1 bg-primary rounded-full mt-2 shrink-0"></span> Aisle Decor</li>
+                    <li data-tier-item class="flex items-start gap-3 text-noir/70 text-sm font-light"><span data-bullet class="w-1 h-1 bg-primary rounded-full mt-2 shrink-0"></span> Table Decor (Guest Tables)</li>
+                    <li data-tier-item class="flex items-start gap-3 text-noir/70 text-sm font-light"><span data-bullet class="w-1 h-1 bg-primary rounded-full mt-2 shrink-0"></span> Chair Covers</li>
+                </ul>
+                <a data-tier-cta href="contact.html" class="mt-8 block text-center py-4 border border-primary/20 text-primary text-xs uppercase tracking-[0.2em] rounded-full hover:bg-primary hover:text-white transition-all duration-500">Get Started</a>
+            </div>
+
+            <!-- GOLD -->
+            <div data-pricing-card class="relative rounded-3xl p-8 flex flex-col reveal cursor-pointer transition-all duration-500 bg-white/85 border border-white/50 glass-card shadow-xl ring-1 ring-primary/10 hover:-translate-y-2 hover:shadow-2xl">
+                <div data-badge class="absolute -top-3 left-1/2 -translate-x-1/2 bg-secondary text-noir text-[10px] uppercase tracking-[0.2em] font-semibold px-4 py-1 rounded-full hidden">Selected</div>
+                <div class="mb-8">
+                    <span data-tier-label class="text-xs uppercase tracking-[0.3em] text-noir/40 block mb-2">Tier 2</span>
+                    <h3 data-tier-title class="display-font text-3xl text-noir mb-3">Gold</h3>
+                    <div data-tier-price class="text-primary font-semibold text-sm">₦1,000,000 – ₦5,000,000</div>
+                </div>
+                <div data-tier-divider class="w-full h-[1px] bg-primary/10 mb-8"></div>
+                <ul class="space-y-4 flex-grow">
+                    <li data-tier-item class="flex items-start gap-3 text-noir/70 text-sm font-light"><span data-bullet class="w-1 h-1 bg-primary rounded-full mt-2 shrink-0"></span> Premium Stage Setup</li>
+                    <li data-tier-item class="flex items-start gap-3 text-noir/70 text-sm font-light"><span data-bullet class="w-1 h-1 bg-primary rounded-full mt-2 shrink-0"></span> Luxury Flower Arrangements</li>
+                    <li data-tier-item class="flex items-start gap-3 text-noir/70 text-sm font-light"><span data-bullet class="w-1 h-1 bg-primary rounded-full mt-2 shrink-0"></span> Draping &amp; Backdrop</li>
+                    <li data-tier-item class="flex items-start gap-3 text-noir/70 text-sm font-light"><span data-bullet class="w-1 h-1 bg-primary rounded-full mt-2 shrink-0"></span> Chandelier / Special Lighting</li>
+                    <li data-tier-item class="flex items-start gap-3 text-noir/70 text-sm font-light"><span data-bullet class="w-1 h-1 bg-primary rounded-full mt-2 shrink-0"></span> Aisle Decor</li>
+                    <li data-tier-item class="flex items-start gap-3 text-noir/70 text-sm font-light"><span data-bullet class="w-1 h-1 bg-primary rounded-full mt-2 shrink-0"></span> Table Decor (Guest &amp; VIP Tables)</li>
+                    <li data-tier-item class="flex items-start gap-3 text-noir/70 text-sm font-light"><span data-bullet class="w-1 h-1 bg-primary rounded-full mt-2 shrink-0"></span> Chair Covers</li>
+                    <li data-tier-item class="flex items-start gap-3 text-noir/70 text-sm font-light"><span data-bullet class="w-1 h-1 bg-primary rounded-full mt-2 shrink-0"></span> Personalised Signage</li>
+                </ul>
+                <a data-tier-cta href="contact.html" class="mt-8 block text-center py-4 border border-primary/20 text-primary text-xs uppercase tracking-[0.2em] rounded-full hover:bg-primary hover:text-white transition-all duration-500">Get Started</a>
+            </div>
+
+            <!-- DIAMOND (Default Featured) -->
+            <div data-pricing-card data-default-featured class="relative rounded-3xl p-8 flex flex-col reveal cursor-pointer transition-all duration-500 bg-noir text-white shadow-2xl shadow-noir/30 border border-white/5 scale-105">
+                <div data-badge class="absolute -top-3 left-1/2 -translate-x-1/2 bg-secondary text-noir text-[10px] uppercase tracking-[0.2em] font-semibold px-4 py-1 rounded-full">Selected</div>
+                <div class="mb-8">
+                    <span data-tier-label class="text-xs uppercase tracking-[0.3em] text-white/40 block mb-2">Tier 3</span>
+                    <h3 data-tier-title class="display-font text-3xl text-white mb-3">Diamond</h3>
+                    <div data-tier-price class="text-secondary font-semibold text-sm">₦5,000,000 – ₦10,000,000</div>
+                </div>
+                <div data-tier-divider class="w-full h-[1px] bg-white/10 mb-8"></div>
+                <ul class="space-y-4 flex-grow">
+                    <li data-tier-item class="flex items-start gap-3 text-white/70 text-sm font-light"><span data-bullet class="w-1 h-1 bg-secondary rounded-full mt-2 shrink-0"></span> Luxury Stage Setup</li>
+                    <li data-tier-item class="flex items-start gap-3 text-white/70 text-sm font-light"><span data-bullet class="w-1 h-1 bg-secondary rounded-full mt-2 shrink-0"></span> Premium Flower Arrangements</li>
+                    <li data-tier-item class="flex items-start gap-3 text-white/70 text-sm font-light"><span data-bullet class="w-1 h-1 bg-secondary rounded-full mt-2 shrink-0"></span> Draping &amp; Premium Backdrop</li>
+                    <li data-tier-item class="flex items-start gap-3 text-white/70 text-sm font-light"><span data-bullet class="w-1 h-1 bg-secondary rounded-full mt-2 shrink-0"></span> Chandelier / Special Lighting</li>
+                    <li data-tier-item class="flex items-start gap-3 text-white/70 text-sm font-light"><span data-bullet class="w-1 h-1 bg-secondary rounded-full mt-2 shrink-0"></span> Aisle Decor</li>
+                    <li data-tier-item class="flex items-start gap-3 text-white/70 text-sm font-light"><span data-bullet class="w-1 h-1 bg-secondary rounded-full mt-2 shrink-0"></span> Table Decor (All Tables)</li>
+                    <li data-tier-item class="flex items-start gap-3 text-white/70 text-sm font-light"><span data-bullet class="w-1 h-1 bg-secondary rounded-full mt-2 shrink-0"></span> Custom Signage &amp; Monogram</li>
+                    <li data-tier-item class="flex items-start gap-3 text-white/70 text-sm font-light"><span data-bullet class="w-1 h-1 bg-secondary rounded-full mt-2 shrink-0"></span> Dance Floor</li>
+                    <li data-tier-item class="flex items-start gap-3 text-white/70 text-sm font-light"><span data-bullet class="w-1 h-1 bg-secondary rounded-full mt-2 shrink-0"></span> Coordination on the Day</li>
+                </ul>
+                <a data-tier-cta href="contact.html" class="mt-8 block text-center py-4 bg-secondary text-noir text-xs uppercase tracking-[0.2em] rounded-full hover:bg-white transition-all duration-500 font-semibold">Get Started</a>
+            </div>
+
+            <!-- PLATINUM -->
+            <div data-pricing-card class="relative rounded-3xl p-8 flex flex-col reveal cursor-pointer transition-all duration-500 bg-white/85 border border-white/50 glass-card shadow-xl ring-1 ring-primary/10 hover:-translate-y-2 hover:shadow-2xl">
+                <div data-badge class="absolute -top-3 left-1/2 -translate-x-1/2 bg-secondary text-noir text-[10px] uppercase tracking-[0.2em] font-semibold px-4 py-1 rounded-full hidden">Selected</div>
+                <div class="mb-8">
+                    <span data-tier-label class="text-xs uppercase tracking-[0.3em] text-noir/40 block mb-2">Tier 4</span>
+                    <h3 data-tier-title class="display-font text-3xl text-noir mb-3">Platinum</h3>
+                    <div data-tier-price class="text-primary font-semibold text-sm">₦10,000,000 – ₦25,000,000</div>
+                </div>
+                <div data-tier-divider class="w-full h-[1px] bg-primary/10 mb-8"></div>
+                <ul class="space-y-4 flex-grow">
+                    <li data-tier-item class="flex items-start gap-3 text-noir/70 text-sm font-light"><span data-bullet class="w-1 h-1 bg-primary rounded-full mt-2 shrink-0"></span> Bespoke Stage Design</li>
+                    <li data-tier-item class="flex items-start gap-3 text-noir/70 text-sm font-light"><span data-bullet class="w-1 h-1 bg-primary rounded-full mt-2 shrink-0"></span> Luxury Flowers &amp; Greenery</li>
+                    <li data-tier-item class="flex items-start gap-3 text-noir/70 text-sm font-light"><span data-bullet class="w-1 h-1 bg-primary rounded-full mt-2 shrink-0"></span> Premium Draping &amp; Backdrops</li>
+                    <li data-tier-item class="flex items-start gap-3 text-noir/70 text-sm font-light"><span data-bullet class="w-1 h-1 bg-primary rounded-full mt-2 shrink-0"></span> Multiple Chandeliers / Special Effects</li>
+                    <li data-tier-item class="flex items-start gap-3 text-noir/70 text-sm font-light"><span data-bullet class="w-1 h-1 bg-primary rounded-full mt-2 shrink-0"></span> Aisle Runway Decor</li>
+                    <li data-tier-item class="flex items-start gap-3 text-noir/70 text-sm font-light"><span data-bullet class="w-1 h-1 bg-primary rounded-full mt-2 shrink-0"></span> Table Decor (All Tables + VIP)</li>
+                    <li data-tier-item class="flex items-start gap-3 text-noir/70 text-sm font-light"><span data-bullet class="w-1 h-1 bg-primary rounded-full mt-2 shrink-0"></span> Custom Signage &amp; Monogram</li>
+                    <li data-tier-item class="flex items-start gap-3 text-noir/70 text-sm font-light"><span data-bullet class="w-1 h-1 bg-primary rounded-full mt-2 shrink-0"></span> Dance Floor / FOH Arrangement</li>
+                    <li data-tier-item class="flex items-start gap-3 text-noir/70 text-sm font-light"><span data-bullet class="w-1 h-1 bg-primary rounded-full mt-2 shrink-0"></span> Full Day Coordination</li>
+                </ul>
+                <a data-tier-cta href="contact.html" class="mt-8 block text-center py-4 border border-primary/20 text-primary text-xs uppercase tracking-[0.2em] rounded-full hover:bg-primary hover:text-white transition-all duration-500">Get Started</a>
+            </div>
+
+        </div>
+
+        <!-- Note & Contact -->
+        <div class="mt-16 text-center reveal">
+            <p class="text-noir/40 text-sm font-light italic max-w-2xl mx-auto">Prices are subject to venue size, location, design complexity and additional custom requests.</p>
+        </div>
+    </div>
+</section>
+
+<!-- Elegant CTA -->
+<section class="py-32 bg-background relative overflow-hidden">
+    <div class="absolute inset-0 opacity-5" style="background-image: url('https://www.transparenttextures.com/patterns/cubes.png');"></div>
+    <div class="max-w-4xl mx-auto text-center px-8 relative z-10 reveal">
+        <span class="material-symbols-outlined text-primary text-5xl mb-8 font-light">mark_email_read</span>
+        <h2 class="display-font text-5xl md:text-6xl text-noir mb-8">Begin the Dialogue</h2>
+        <p class="text-xl text-noir/60 font-light mb-12 max-w-2xl mx-auto">Your next landmark moment starts with a single conversation. We invite you to experience the Tamscot difference.</p>
+        <button class="px-12 py-5 bg-noir text-white text-sm uppercase tracking-[0.2em] rounded-full hover:bg-primary transition-colors duration-500 shadow-xl shadow-noir/20">
+            Start Consultation
+        </button>
+    </div>
+</section>
+
+<!-- Footer -->
+<footer class="bg-noir text-white pt-24 pb-10">
+    <div class="px-8 md:px-16 max-w-7xl mx-auto">
+        <div class="grid grid-cols-1 md:grid-cols-4 gap-12 mb-20">
+            <div class="md:col-span-1">
+                <div class="display-font text-3xl text-secondary mb-6">Tamscot</div>
+                <p class="text-white/50 font-light text-sm leading-relaxed">International luxury event planners redefining the art of celebration.</p>
+            </div>
+            <div>
+                <p class="text-xs uppercase tracking-[0.2em] text-white mb-6">Society</p>
+                <ul class="space-y-4 text-white/50 font-light text-sm">
+                    <li><a href="https://instagram.com/tamscotevents" target="_blank" class="hover:text-secondary transition-colors">IG: Tamscot Events</a></li>
+                    <li><a href="https://www.tiktok.com/@tamscotevents" target="_blank" class="hover:text-secondary transition-colors">TikTok: Tamscot Events</a></li>
+                </ul>
+            </div>
+            <!-- Offices removed as requested -->
+            <div>
+                <p class="text-xs uppercase tracking-[0.2em] text-white mb-6">Legal</p>
+                <ul class="space-y-4 text-white/50 font-light text-sm">
+                    <li><a href="#" class="hover:text-white transition-colors">Privacy Policy</a></li>
+                    <li><a href="#" class="hover:text-white transition-colors">Terms of Service</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="border-t border-white/10 pt-10 flex flex-col md:flex-row justify-between items-center gap-6">
+            <p class="text-white/40 text-sm font-light">© 2026 Tamscot Events. All rights reserved.</p>
+            <div class="flex gap-6 text-white/30">
+                <span class="material-symbols-outlined text-lg">spa</span>
+                <span class="material-symbols-outlined text-lg">favorite</span>
+            </div>
+        </div>
+    </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>

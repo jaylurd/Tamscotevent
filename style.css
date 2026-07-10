@@ -1,0 +1,40 @@
+body {
+    background-color: #faf8f5;
+    color: #3e2723;
+    overflow-x: hidden;
+    font-family: 'Montserrat', sans-serif;
+}
+h1, h2, h3, h4, .display-font {
+    font-family: 'Playfair Display', serif;
+}
+.glass-nav {
+    background: rgba(255, 255, 255, 0.75);
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+    border-bottom: 1px solid rgba(139, 90, 43, 0.08);
+}
+.glass-card {
+    background: rgba(255, 255, 255, 0.85);
+    backdrop-filter: blur(24px);
+    -webkit-backdrop-filter: blur(24px);
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    box-shadow: 0 20px 40px rgba(62, 39, 35, 0.04);
+    transition: all 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+}
+.glass-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 30px 60px rgba(139, 90, 43, 0.08);
+    border-color: rgba(139, 90, 43, 0.2);
+}
+.reveal {
+    opacity: 0;
+    transform: translateY(40px);
+    transition: all 1.2s cubic-bezier(0.16, 1, 0.3, 1);
+}
+.reveal.active {
+    opacity: 1;
+    transform: translateY(0);
+}
+::-webkit-scrollbar { width: 6px; }
+::-webkit-scrollbar-track { background: #faf8f5; }
+::-webkit-scrollbar-thumb { background: #d2b48c; border-radius: 10px; }

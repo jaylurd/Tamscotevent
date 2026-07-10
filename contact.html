@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="utf-8"/>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+    <title>Contact | Tamscot Events</title>
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Montserrat:wght@300;400;500;600&display=swap" rel="stylesheet"/>
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@200,0&display=swap" rel="stylesheet"/>
+    <script src="tailwind-config.js"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="antialiased selection:bg-primary selection:text-white bg-background">
+
+<!-- Elegant Navigation -->
+<nav class="fixed top-0 w-full z-50 glass-nav transition-all duration-500" id="navbar">
+    <div class="flex justify-between items-center px-8 md:px-16 py-5 max-w-[1600px] mx-auto">
+        <a href="index.html" class="display-font text-2xl md:text-3xl text-primary font-medium tracking-wide">Tamscot Event</a>
+        
+        <div class="desktop-nav hidden md:flex gap-10 items-center">
+            <a class="text-xs uppercase tracking-[0.2em] text-noir/60 hover:text-primary transition-colors relative group" href="index.html">
+                Home
+                <span class="absolute -bottom-2 left-0 w-0 h-[1px] bg-primary group-hover:w-full transition-all duration-300"></span>
+            </a>
+            <a class="text-xs uppercase tracking-[0.2em] text-noir/60 hover:text-primary transition-colors relative group" href="about.html">
+                About
+                <span class="absolute -bottom-2 left-0 w-0 h-[1px] bg-primary group-hover:w-full transition-all duration-300"></span>
+            </a>
+            <a class="text-xs uppercase tracking-[0.2em] text-noir/60 hover:text-primary transition-colors relative group" href="services.html">
+                Services
+                <span class="absolute -bottom-2 left-0 w-0 h-[1px] bg-primary group-hover:w-full transition-all duration-300"></span>
+            </a>
+            <a class="text-xs uppercase tracking-[0.2em] text-noir/60 hover:text-primary transition-colors relative group" href="gallery.html">
+                Gallery
+                <span class="absolute -bottom-2 left-0 w-0 h-[1px] bg-primary group-hover:w-full transition-all duration-300"></span>
+            </a>
+            <a class="text-xs uppercase tracking-[0.2em] text-primary font-semibold relative group" href="contact.html">
+                Contact
+                <span class="absolute -bottom-2 left-0 w-full h-[1px] bg-primary scale-x-100 transition-transform duration-300"></span>
+            </a>
+            <a href="https://wa.me/2349034486406?text=Hello%20Tamscot%20Events%2C%20I%20would%20like%20to%20book%20a%20consultation." target="_blank" rel="noopener noreferrer" class="ml-6 px-8 py-3 bg-primary text-white text-xs uppercase tracking-[0.2em] rounded-full hover:bg-noir transition-colors duration-500 shadow-lg shadow-primary/20">Book Consultation</a>
+        </div>
+        <button class="md:hidden text-primary">
+            <span class="material-symbols-outlined text-3xl">menu_open</span>
+        </button>
+    </div>
+</nav>
+
+<!-- Contact Section -->
+<section class="pt-48 pb-32 bg-background relative overflow-hidden">
+    <div class="px-8 md:px-16 max-w-7xl mx-auto">
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-20">
+            <!-- Info -->
+            <div class="animate-fade-up">
+                <h1 class="display-font text-5xl md:text-7xl text-noir mb-8 leading-tight">
+                    Let's create <br/><span class="italic text-primary">something beautiful.</span>
+                </h1>
+                <p class="text-lg text-noir/60 font-light mb-16 max-w-md">Whether you are planning an intimate gathering or a grand celebration, our team is ready to bring your vision to life.</p>
+                
+                <div class="space-y-8">
+                    <div>
+                        <p class="text-xs uppercase tracking-[0.2em] text-primary mb-2">Email</p>
+                        <a href="mailto:mosimiloluwaayolola@gmail.com" class="text-2xl text-noir font-light hover:text-secondary transition-colors">mosimiloluwaayolola@gmail.com</a>
+                    </div>
+                    <div>
+                        <p class="text-xs uppercase tracking-[0.2em] text-primary mb-2">Phone</p>
+                        <a href="tel:09034486406" class="text-2xl text-noir font-light hover:text-secondary transition-colors">📞 09034486406</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Form -->
+            <div class="glass-card p-12 rounded-3xl animate-fade-up" style="animation-delay: 0.2s;">
+                <form class="space-y-8">
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                        <div>
+                            <label class="text-xs uppercase tracking-[0.2em] text-noir/50 block mb-2">First Name</label>
+                            <input type="text" class="w-full bg-transparent border-b border-primary/20 pb-2 text-noir focus:outline-none focus:border-primary transition-colors" placeholder="Jane">
+                        </div>
+                        <div>
+                            <label class="text-xs uppercase tracking-[0.2em] text-noir/50 block mb-2">Last Name</label>
+                            <input type="text" class="w-full bg-transparent border-b border-primary/20 pb-2 text-noir focus:outline-none focus:border-primary transition-colors" placeholder="Doe">
+                        </div>
+                    </div>
+                    <div>
+                        <label class="text-xs uppercase tracking-[0.2em] text-noir/50 block mb-2">Email Address</label>
+                        <input type="email" class="w-full bg-transparent border-b border-primary/20 pb-2 text-noir focus:outline-none focus:border-primary transition-colors" placeholder="jane@example.com">
+                    </div>
+                    <div>
+                        <label class="text-xs uppercase tracking-[0.2em] text-noir/50 block mb-2">Event Type</label>
+                        <select class="w-full bg-transparent border-b border-primary/20 pb-2 text-noir/70 focus:outline-none focus:border-primary transition-colors appearance-none cursor-pointer">
+                            <option>Wedding</option>
+                            <option>Corporate Gala</option>
+                            <option>Private Party</option>
+                            <option>Other</option>
+                        </select>
+                    </div>
+                    <div>
+                        <label class="text-xs uppercase tracking-[0.2em] text-noir/50 block mb-2">Tell us about your vision</label>
+                        <textarea rows="4" class="w-full bg-transparent border-b border-primary/20 pb-2 text-noir focus:outline-none focus:border-primary transition-colors" placeholder="How can we help?"></textarea>
+                    </div>
+                    <button type="button" class="w-full py-5 bg-primary text-white text-xs uppercase tracking-[0.2em] rounded-full hover:bg-noir transition-colors duration-500 shadow-lg mt-4">
+                        Send Inquiry
+                    </button>
+                </form>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Footer -->
+<footer class="bg-noir text-white pt-24 pb-10 mt-20">
+    <div class="px-8 md:px-16 max-w-7xl mx-auto">
+        <div class="grid grid-cols-1 md:grid-cols-4 gap-12 mb-20">
+            <div class="md:col-span-1">
+                <a href="index.html" class="display-font text-3xl text-secondary mb-6 block">Tamscot</a>
+                <p class="text-white/50 font-light text-sm leading-relaxed">International luxury event planners redefining the art of celebration.</p>
+            </div>
+            <div>
+                <p class="text-xs uppercase tracking-[0.2em] text-white mb-6">Society</p>
+                <ul class="space-y-4 text-white/50 font-light text-sm">
+                    <li><a href="https://instagram.com/tamscotevents" target="_blank" class="hover:text-secondary transition-colors">IG: Tamscot Events</a></li>
+                    <li><a href="https://www.tiktok.com/@tamscotevents" target="_blank" class="hover:text-secondary transition-colors">TikTok: Tamscot Events</a></li>
+                </ul>
+            </div>
+            <!-- Offices removed as requested -->
+            <div>
+                <p class="text-xs uppercase tracking-[0.2em] text-white mb-6">Legal</p>
+                <ul class="space-y-4 text-white/50 font-light text-sm">
+                    <li><a href="#" class="hover:text-white transition-colors">Privacy Policy</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="border-t border-white/10 pt-10 flex flex-col md:flex-row justify-between items-center gap-6">
+            <p class="text-white/40 text-sm font-light">© 2026 Tamscot Events. All rights reserved.</p>
+        </div>
+    </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
